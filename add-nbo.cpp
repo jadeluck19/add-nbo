@@ -15,6 +15,7 @@ int main(int argc, char *argv[])
     buf2 = my_ntohl(buf2);
     uint32_t sum = buf1 + buf2;
     printf("%d(0x%x) + %d(0x%x) = %d(0x%x)",buf1, buf1, buf2, buf2, sum, sum);
+    fclose(p1); fclose(p2);
     return 0;
 }
 
